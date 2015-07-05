@@ -1,0 +1,14 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- cfInvitation auto create start -->
+	<package name="cfInvitation" namespace="/admin/crowdfunding" extends="default">
+		<action name="cfInvitation" class="com.crowdfunding.web.action.AdminCfInvitationAction">
+			<result name="cfInvitation-index">/jsp/crowdfunding/cfInvitation/index.jsp</result>
+			<result name="cfInvitation-add">/jsp/crowdfunding/cfInvitation/add.jsp</result>
+			<result name="cfInvitation-edit">/jsp/crowdfunding/cfInvitation/edit.jsp</result>
+		</action>
+	</package>
+	<!-- cfInvitation auto create end -->
+</struts>

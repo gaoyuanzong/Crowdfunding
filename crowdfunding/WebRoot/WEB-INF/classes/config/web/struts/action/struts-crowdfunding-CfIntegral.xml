@@ -1,0 +1,14 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- cfIntegral auto create start -->
+	<package name="cfIntegral" namespace="/admin/crowdfunding" extends="default">
+		<action name="cfIntegral" class="com.crowdfunding.web.action.AdminCfIntegralAction">
+			<result name="cfIntegral-index">/jsp/crowdfunding/cfIntegral/index.jsp</result>
+			<result name="cfIntegral-add">/jsp/crowdfunding/cfIntegral/add.jsp</result>
+			<result name="cfIntegral-edit">/jsp/crowdfunding/cfIntegral/edit.jsp</result>
+		</action>
+	</package>
+	<!-- cfIntegral auto create end -->
+</struts>

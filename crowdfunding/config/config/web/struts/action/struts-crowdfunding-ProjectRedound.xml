@@ -1,0 +1,14 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- projectRedound auto create start -->
+	<package name="projectRedound" namespace="/admin/crowdfunding" extends="default">
+		<action name="projectRedound" class="com.crowdfunding.web.action.AdminProjectRedoundAction">
+			<result name="projectRedound-index">/jsp/crowdfunding/projectRedound/index.jsp</result>
+			<result name="projectRedound-add">/jsp/crowdfunding/projectRedound/add.jsp</result>
+			<result name="projectRedound-edit">/jsp/crowdfunding/projectRedound/edit.jsp</result>
+		</action>
+	</package>
+	<!-- projectRedound auto create end -->
+</struts>

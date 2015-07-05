@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans default-autowire="byName" default-lazy-init="false" >
+<!-- 
+	<bean id="abstractBookService" class="com.crowdfunding.core.service.impl.AbstractBookService" abstract="true"></bean>
+	 -->
+	<bean id="applicationContextHolder" class="com.crowdfunding.core.util.ApplicationContextHolder"/>
+	 
+	<bean id="baseService" class="com.crowdfunding.core.service.impl.BaseServiceImpl"/>
+	<bean id="employeeService" class="com.crowdfunding.core.service.impl.EmployeeServiceImpl"></bean>
+	<bean id="menuService" class="com.crowdfunding.core.service.impl.MenuServiceImpl"></bean>
+	<bean id="roleService" class="com.crowdfunding.core.service.impl.RoleServiceImpl"></bean>
+	<bean id="roletemplateService" class="com.crowdfunding.core.service.impl.RoletemplateServiceImpl"></bean>
+	<bean id="loginService" class="com.crowdfunding.core.service.impl.LoginServiceImpl"></bean>
+	<bean id="jacobHandler" class="com.crowdfunding.core.service.paper.transfer.JacobHandler"/>
+	
+	
+	<bean id="cfDiscountService" class="com.crowdfunding.core.service.impl.CfDiscountServiceImpl"></bean>
+	<bean id="cfInformationService" class="com.crowdfunding.core.service.impl.CfInformationServiceImpl"></bean>
+	<bean id="cfIntegralService" class="com.crowdfunding.core.service.impl.CfIntegralServiceImpl"></bean>
+	<bean id="cfInvitationService" class="com.crowdfunding.core.service.impl.CfInvitationServiceImpl"></bean>
+	<bean id="cfLoginlogService" class="com.crowdfunding.core.service.impl.CfLoginlogServiceImpl"></bean>
+	<bean id="cfMoneyRecordService" class="com.crowdfunding.core.service.impl.CfMoneyRecordServiceImpl"></bean>
+	<bean id="cfQuestionService" class="com.crowdfunding.core.service.impl.CfQuestionServiceImpl"></bean>
+	<bean id="cfReaddressService" class="com.crowdfunding.core.service.impl.CfReaddressServiceImpl"></bean>
+	<bean id="cfUserService" class="com.crowdfunding.core.service.impl.CfUserServiceImpl"></bean>
+	<bean id="projectService" class="com.crowdfunding.core.service.impl.ProjectServiceImpl"></bean>
+	<bean id="projectCategoryTagService" class="com.crowdfunding.core.service.impl.ProjectCategoryTagServiceImpl"></bean>
+	<bean id="projectProgressService" class="com.crowdfunding.core.service.impl.ProjectProgressServiceImpl"></bean>
+	<bean id="projectRedoundService" class="com.crowdfunding.core.service.impl.ProjectRedoundServiceImpl"></bean>
+	<bean id="projectRefundService" class="com.crowdfunding.core.service.impl.ProjectRefundServiceImpl"></bean>
+	<bean id="projectSubscribeService" class="com.crowdfunding.core.service.impl.ProjectSubscribeServiceImpl"></bean>
+	
+</beans>

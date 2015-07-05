@@ -1,0 +1,14 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- projectSubscribe auto create start -->
+	<package name="projectSubscribe" namespace="/admin/crowdfunding" extends="default">
+		<action name="projectSubscribe" class="com.crowdfunding.web.action.AdminProjectSubscribeAction">
+			<result name="projectSubscribe-index">/jsp/crowdfunding/projectSubscribe/index.jsp</result>
+			<result name="projectSubscribe-add">/jsp/crowdfunding/projectSubscribe/add.jsp</result>
+			<result name="projectSubscribe-edit">/jsp/crowdfunding/projectSubscribe/edit.jsp</result>
+		</action>
+	</package>
+	<!-- projectSubscribe auto create end -->
+</struts>

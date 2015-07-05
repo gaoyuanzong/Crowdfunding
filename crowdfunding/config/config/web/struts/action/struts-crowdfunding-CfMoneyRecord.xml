@@ -1,0 +1,14 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- cfMoneyRecord auto create start -->
+	<package name="cfMoneyRecord" namespace="/admin/crowdfunding" extends="default">
+		<action name="cfMoneyRecord" class="com.crowdfunding.web.action.AdminCfMoneyRecordAction">
+			<result name="cfMoneyRecord-index">/jsp/crowdfunding/cfMoneyRecord/index.jsp</result>
+			<result name="cfMoneyRecord-add">/jsp/crowdfunding/cfMoneyRecord/add.jsp</result>
+			<result name="cfMoneyRecord-edit">/jsp/crowdfunding/cfMoneyRecord/edit.jsp</result>
+		</action>
+	</package>
+	<!-- cfMoneyRecord auto create end -->
+</struts>

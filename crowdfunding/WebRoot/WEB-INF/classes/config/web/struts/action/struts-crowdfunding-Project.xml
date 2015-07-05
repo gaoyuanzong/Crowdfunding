@@ -1,0 +1,28 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- project auto create start -->
+	<package name="project" namespace="/admin/crowdfunding" extends="default">
+		<action name="project" class="com.crowdfunding.web.action.AdminProjectAction">
+			<result name="project-index">/jsp/crowdfunding/project/index.jsp</result>
+			<result name="project-add">/jsp/crowdfunding/project/add.jsp</result>
+			<result name="project-edit">/jsp/crowdfunding/project/edit.jsp</result>
+			<result name="project-selectUsers">/jsp/crowdfunding/project/selectUsers.jsp</result>
+			<!-- 项目审核视图 -->
+			<result name="project-audit">/jsp/crowdfunding/project/audit.jsp</result>
+			
+			<!-- 项目拒绝视图 -->
+			<result name="project-refuse">/jsp/crowdfunding/project/refuse.jsp</result>
+			
+			<!-- 项目通过视图 -->
+			<result name="project-pass">/jsp/crowdfunding/project/pass.jsp</result>
+		</action>
+		
+		<action name="projectStatus" class="com.crowdfunding.web.action.AdminProjectStatusAction">
+			<result name="projectIng-index">/jsp/crowdfunding/projectStatus/projectIng.jsp</result>
+		</action>
+	</package>
+	<!-- project auto create end -->
+</struts>
+

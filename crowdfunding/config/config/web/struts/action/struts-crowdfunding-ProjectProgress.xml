@@ -1,0 +1,14 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- projectProgress auto create start -->
+	<package name="projectProgress" namespace="/admin/crowdfunding" extends="default">
+		<action name="projectProgress" class="com.crowdfunding.web.action.AdminProjectProgressAction">
+			<result name="projectProgress-index">/jsp/crowdfunding/projectProgress/index.jsp</result>
+			<result name="projectProgress-add">/jsp/crowdfunding/projectProgress/add.jsp</result>
+			<result name="projectProgress-edit">/jsp/crowdfunding/projectProgress/edit.jsp</result>
+		</action>
+	</package>
+	<!-- projectProgress auto create end -->
+</struts>

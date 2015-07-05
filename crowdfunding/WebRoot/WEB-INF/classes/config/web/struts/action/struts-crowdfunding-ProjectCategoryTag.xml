@@ -1,0 +1,17 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- projectCategoryTag auto create start -->
+	<package name="projectCategoryTag" namespace="/admin/crowdfunding" extends="default">
+		<action name="projectCategoryTag" class="com.crowdfunding.web.action.AdminProjectCategoryTagAction">
+			<result name="projectCategoryTag-index">/jsp/crowdfunding/projectCategoryTag/index.jsp</result>
+			<result name="projectLableTag-index">/jsp/crowdfunding/projectLableTag/index.jsp</result>
+			<result name="projectCategoryTag-add">/jsp/crowdfunding/projectCategoryTag/add.jsp</result>
+			<result name="projectLableTag-add">/jsp/crowdfunding/projectLableTag/add.jsp</result>
+			<result name="projectCategoryTag-edit">/jsp/crowdfunding/projectCategoryTag/edit.jsp</result>
+			<result name="projectLableTag-edit">/jsp/crowdfunding/projectLableTag/edit.jsp</result>
+		</action>
+	</package>
+	<!-- projectCategoryTag auto create end -->
+</struts>

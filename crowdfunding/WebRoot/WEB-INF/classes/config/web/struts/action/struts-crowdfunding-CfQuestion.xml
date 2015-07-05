@@ -1,0 +1,14 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- cfQuestion auto create start -->
+	<package name="cfQuestion" namespace="/admin/crowdfunding" extends="default">
+		<action name="cfQuestion" class="com.crowdfunding.web.action.AdminCfQuestionAction">
+			<result name="cfQuestion-index">/jsp/crowdfunding/cfQuestion/index.jsp</result>
+			<result name="cfQuestion-add">/jsp/crowdfunding/cfQuestion/add.jsp</result>
+			<result name="cfQuestion-edit">/jsp/crowdfunding/cfQuestion/edit.jsp</result>
+		</action>
+	</package>
+	<!-- cfQuestion auto create end -->
+</struts>
